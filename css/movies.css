@@ -1,0 +1,111 @@
+/*-----------------*/
+/*      Movies     */
+/*-----------------*/
+.content__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+.movie {
+    background-color: #E5E5E5;
+    border-radius: 25px;
+    width: 260px;
+    margin: 0 0 30px 0;
+    padding: 20px;
+    position: relative;
+    transition: .3s;
+  }
+  
+.movie:hover {
+    -webkit-box-shadow: 9px 10px 30px -19px rgba(72, 95, 226, 0.8); 
+    -moz-box-shadow: 9px 10px 30px -19px rgba(72, 95, 226, 0.8); 
+    box-shadow: 9px 10px 30px -19px rgba(72, 95, 226, 0.8);
+    transition: .3s;
+}
+
+  .movie__cover-inner {
+    position: relative;
+    height: auto;
+  }
+  
+  .movie__cover {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 13px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .movie__cover--darkened {
+    background-color: #000000;
+    border-radius: 13px;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .movie__cover--darkened:hover {
+    background-color: grey;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  
+  .movie__info {
+    padding: 10px 0px;
+  }
+  
+  .movie__title {
+    padding: 7px 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    background-color: #1E2B4A;
+    border-radius: 25px;
+    color: #ffffff;
+    line-height: 1.2;
+  }
+  
+  .movie__category {
+    padding: 5px 15px;
+    font-size: 14px;
+    background-color: #DDFA6E;
+    border-radius: 20px;
+    color: #121212;
+  }
+  
+  .movie__average {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b182b;
+    color: #ffffff;
+    font-size: 13px;
+  }
+  
+  .movie__average--green {
+    border: 2px solid green;
+  }
+  
+  .movie__average--orange {
+    border: 2px solid orange;
+  }
+  
+  .movie__average--red {
+    border: 2px solid red;
+  }

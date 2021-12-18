@@ -1,0 +1,25 @@
+/*---------------------*/
+/*      Navigation     */
+/*---------------------*/
+.nav {
+    display: flex;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: 1px solid #485FE2;
+    border-radius: 20px;
+}
+
+.nav__link {
+    margin: 7px 40px;
+    padding: auto;
+    color: #485FE2;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__link.active {
+    text-decoration: underline;
+}

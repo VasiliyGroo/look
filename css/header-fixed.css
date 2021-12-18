@@ -1,0 +1,7 @@
+/*---------------------*/
+/*      Header-fixed   */
+/*---------------------*/
+
+.header.big{ 
+    transform: translateY(-100%);
+}

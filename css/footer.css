@@ -1,0 +1,48 @@
+/*-----------------*/
+/*      Footer     */
+/*-----------------*/
+.footer {
+    padding: 20px;
+    background-color: #1E2B4A;
+    margin-top: auto;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav {
+    display: flex;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.footer__nav-link {
+    margin: 7px 40px;
+    padding: auto;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__nav-link:hover {
+    text-decoration: underline;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__img {
+    width: 45px;
+    height: 50px;
+    margin: 0 20px 0 0;
+}
+
+.footer__copyright {
+    color: #FFFFFF;
+    font-size: 1em;
+}

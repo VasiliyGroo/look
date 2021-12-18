@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <title>Лук</title>
+</head>
+<body>
+
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-href">
+                            <img class="header__img" src="images/logo.svg" alt="logo"/>
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__link" href="index.html">Топ</a>
+                        <a class="nav__link" href="movie.html">Фильмы</a>
+                        <a class="nav__link" href="serials.html">Сериалы</a>
+                        <a class="nav__link" href="premieres.html">Премьеры</a>
+                    </nav>
+                    <form class="search">
+                        <input type="search" class="search__text" placeholder="Поиск...">
+                        <a class="search__btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </form>
+                    <button class="menu-open" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="content">
+            <div class="container">
+                <div class="content__row" id="movies"></div>
+                <a href="serials.html" class="loadMore__text" id="button">
+                    <div class="loadMore">Что там дальше?</div>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a href="index.html" class="footer__logo-href">
+                            <img class="footer__img" src="images/logo.svg" alt="logo"/>
+                        </a>
+                        <p class="footer__copyright">© 2021, Лук. Все права защищены.</p>
+                    </div>
+                    <nav class="footer__nav">
+                        <a class="footer__nav-link" href="https://www.instagram.com/vasiliy_gru/" target="_blank" rel="noreferrer noopener nofollow">Инстаграм</a>
+                        <a class="footer__nav-link" href="https://t.me/" target="_blank" rel="noreferrer noopener nofollow">Телеграм</a>
+                        <a class="footer__nav-link" href="https://gitlab.com/VasiliyGroo/look/" target="_blank" rel="noreferrer noopener nofollow">Гитлаб</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script> 
+<script src="js/serials.js"></script>
+<script src="js/main.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/active-link.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/hystmodal.min.js"></script>
+</body>
+</html>

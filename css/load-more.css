@@ -1,0 +1,26 @@
+.loadMore__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #1E2B4A;
+    height: 90px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: .4s ease;
+}
+.loadMore {
+    font-size: 1.9em;
+    color: #FFFFFF;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loadMore__text:hover {
+    background-color: #485FE2;
+    transition: .4s ease;
+}
