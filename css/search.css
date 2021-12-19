@@ -30,7 +30,7 @@
 }
 
 .search__btn > i {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .search:hover > .search__text {
@@ -52,7 +52,7 @@
 }
 
 .search__text::placeholder {
-    font-size: 14px;
+    font-size: 16px;
     color: #485FE2;
     opacity: .6;
 }
