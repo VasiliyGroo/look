@@ -44,7 +44,7 @@
     top: 0;
     width: 100%;
     border-radius: 0;
-    padding: 140px 15px 20px 15px;
+    padding: 200px 15px 20px 15px;
     z-index: 9999;
 }
 
@@ -65,7 +65,7 @@
     z-index: 9999;
     margin-top: 100px;
     position: absolute;
-    margin: 120px 0 70px 30px;
+    margin: 100px 0 0 30px;
 }
 
 .header .show-search__text {
