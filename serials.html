@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F6F7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#222530">
+
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> 
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <title>Лук</title>
+
+    <title>Лук - Сериалы</title>
 </head>
 <body>
 
@@ -30,6 +38,12 @@
                         <a class="nav__link" href="serials.html">Сериалы</a>
                         <a class="nav__link" href="premieres.html">Премьеры</a>
                     </nav>
+                    <div class="switcher">
+                        <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+                        <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+                        <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+                        <div class="switcher__status"></div>
+                    </div>
                     <form class="search">
                         <input type="search" class="search__text" placeholder="Поиск...">
                         <a class="search__btn">
@@ -80,5 +94,6 @@
 <script src="js/active-link.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/hystmodal.min.js"></script>
+<script src="js/scheme.js"></script>
 </body>
 </html>

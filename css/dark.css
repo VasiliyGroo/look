@@ -53,7 +53,7 @@
 /* Switcher */
 
 .switcher__radio {
-    filter: invert(1);
+    filter: contrast(75%) brightness(50%);
 }
 
 .switcher__radio:checked {
@@ -61,5 +61,5 @@
 }
 
 .switcher__status {
-    filter: invert(1);
+    filter: contrast(75%) brightness(50%);
 }
