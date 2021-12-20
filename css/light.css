@@ -1,0 +1,66 @@
+:root {
+    --body-text-color: #121212;
+    --body-back-color: #F5F6F7;
+    --burger-line-color: #485FE2;
+    --burger-change-bar1-color: #FFFFFF;
+    --burger-change-bar3-color: #FFFFFF;
+    --footer-back-color: #1E2B4A;
+    --footer-nav-link-color: #FFFFFF;
+    --footer-copyright-color: #FFFFFF;
+    --header-back-color: #FFFFFF;
+    --header-show-nav-link-color: #FFFFFF;
+    --header-show-nav-back-color: rgba(12, 32, 99, 0.863);
+    --header-show-search-text-color: #485FE2;
+    --header-show-search-btn-border: 1px solid #485FE2;
+    --header-show-search-btn-back-color: #FFFFFF;
+    --header-show-search-btn-text-color: #485FE2;
+    --hystmodal-window-back-color: #E5E5E5;
+    --hystmodal-close-border: 4px solid #485FE2;
+    --hystmodal-close-back-color: #485FE2;
+    --hystmodal-window-phone-back-color: #E5E5E5;
+    --loadmore-back-color: #1E2B4A;
+    --loadmore-text-color: #FFFFFF;
+    --loadmore-back-hover-color: #485FE2;
+    --movies-show-title-back-color: #1E2B4A;
+    --movies-show-title-text-color: #FFFFFF;
+    --movies-show-year-back-color: #485FE2;
+    --movies-show-year-text-color: #FFFFFF;
+    --movies-show-length-back-color: #D33F6B;
+    --movies-show-length-text-color: #FFFFFF;
+    --movies-show-description-back-color: #6240E6;
+    --movies-show-description-text-color: #FFFFFF;
+    --movies-show-country-back-color: #EC8656;
+    --movies-show-country-text-color: #FFFFFF;
+    --movies-show-category-back-color: #DDFA6E;
+    --movies-show-category-text-color: #121212;
+    --movie-back-color: #E5E5E5;
+    --movie-hover-back-shadow-color: 9px 10px 30px -19px rgba(72, 95, 226, 0.8);
+    --movies-title-back-color: #1E2B4A;
+    --movies-title-text-color: #FFFFFF;
+    --movies-category-back-color: #DDFA6E;
+    --movies-category-text-color: #121212;
+    --nav-border-color: 1px solid #485FE2;
+    --nav-link-text-color: #485FE2;
+    --search-back-color: #F5F6F7;
+    --search-btn-border-color: 1px solid #485FE2;
+    --search-btn-back-color: #FFFFFF;
+    --search-btn-text-color: #485FE2;
+    --search-btn-shadow-back-color: 0px 0px 44px 5px rgba(72, 95, 226, 0.46);
+    --search-text-color: #485FE2;
+    --search-text-placeholder-color: #485FE2;
+}
+
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(0);
+}
+
+.switcher__radio:checked {
+    filter: invert(1);
+}
+
+.switcher__status {
+    filter: invert(0);
+}
+

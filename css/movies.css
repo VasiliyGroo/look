@@ -8,7 +8,7 @@
   }
   
 .movie {
-    background-color: #E5E5E5;
+    background-color: var(--movie-back-color);
     border-radius: 25px;
     width: 260px;
     margin: 0 0 30px 0;
@@ -18,9 +18,9 @@
   }
   
 .movie:hover {
-    -webkit-box-shadow: 9px 10px 30px -19px rgba(72, 95, 226, 0.8); 
-    -moz-box-shadow: 9px 10px 30px -19px rgba(72, 95, 226, 0.8); 
-    box-shadow: 9px 10px 30px -19px rgba(72, 95, 226, 0.8);
+    -webkit-box-shadow: var(--movie-hover-back-shadow-color); 
+    -moz-box-shadow: var(--movie-hover-back-shadow-color); 
+    box-shadow: var(--movie-hover-back-shadow-color); 
     transition: .3s;
 }
 
@@ -68,18 +68,18 @@
     padding: 7px 15px;
     margin-bottom: 5px;
     font-size: 15px;
-    background-color: #1E2B4A;
+    background-color: var(--movies-title-back-color);
     border-radius: 25px;
-    color: #ffffff;
+    color: var(--movies-title-text-color);
     line-height: 1.2;
   }
   
   .movie__category {
     padding: 5px 15px;
     font-size: 14px;
-    background-color: #DDFA6E;
+    background-color: var(--movies-category-back-color);
     border-radius: 20px;
-    color: #121212;
+    color: var(--movies-category-text-color);
   }
   
   .movie__average {

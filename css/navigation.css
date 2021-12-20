@@ -5,14 +5,14 @@
     display: flex;
     font-size: 1.1em;
     text-transform: uppercase;
-    border: 1px solid #485FE2;
+    border: var(--nav-border-color);
     border-radius: 20px;
 }
 
 .nav__link {
     margin: 7px 40px;
     padding: auto;
-    color: #485FE2;
+    color: var(--nav-link-text-color);
     text-decoration: none;
 }
 

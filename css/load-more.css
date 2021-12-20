@@ -5,7 +5,7 @@
     align-items: center;
     max-width: 1140px;
     margin: 0 auto;
-    background-color: #1E2B4A;
+    background-color: var(--loadmore-back-color);
     height: 90px;
     border-radius: 40px;
     text-decoration: none;
@@ -13,7 +13,7 @@
 }
 .loadMore {
     font-size: 1.9em;
-    color: #FFFFFF;
+    color: var(--loadmore-text-color);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,6 @@
 }
 
 .loadMore__text:hover {
-    background-color: #485FE2;
+    background-color: var(--loadmore-back-hover-color);
     transition: .4s ease;
 }

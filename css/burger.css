@@ -6,19 +6,19 @@
     display: inline-block;
     cursor: pointer;
     margin-bottom: 20px;
-    margin-top: -50px;
+    margin-top: 10px;
   }
   
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #485FE2;
+    background-color: var(--burger-line-color);
     margin: 6px 0;
     transition: 0.4s;
   }
   
   .change .bar1 {
-    background-color: #fff;
+    background-color: var(--burger-change-bar1-color);
     -webkit-transform: rotate(-45deg) translate(-8px, 7px);
     transform: rotate(-45deg) translate(-8px, 7px);
   }
@@ -26,7 +26,7 @@
   .change .bar2 {opacity: 0;}
   
   .change .bar3 {
-    background-color: #fff;
+    background-color: var(--burger-change-bar3-color);
     -webkit-transform: rotate(45deg) translate(-9px, -7px);
     transform: rotate(45deg) translate(-9px, -7px);
   }

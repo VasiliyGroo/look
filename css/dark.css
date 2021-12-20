@@ -1,0 +1,65 @@
+:root {
+    --body-text-color: #A2A7B9;
+    --body-back-color: #222530;
+    --burger-line-color: #637FE6;
+    --burger-change-bar1-color: #FFFFFF;
+    --burger-change-bar3-color: #FFFFFF;
+    --footer-back-color: #171923;
+    --footer-nav-link-color: #FFFFFF;
+    --footer-copyright-color: #FFFFFF;
+    --header-back-color: #17171A;
+    --header-show-nav-link-color: #FFFFFF;
+    --header-show-nav-back-color: rgba(0, 0, 0, 0.863);
+    --header-show-search-text-color: #637FE6;
+    --header-show-search-btn-border: 1px solid #637FE6;
+    --header-show-search-btn-back-color: #17171A;
+    --header-show-search-btn-text-color: #637FE6;
+    --hystmodal-window-back-color: #333545;
+    --hystmodal-close-border: 4px solid #637FE6;
+    --hystmodal-close-back-color: #637FE6;
+    --hystmodal-window-phone-back-color: #333545;
+    --loadmore-back-color: #171923;
+    --loadmore-text-color: #FFFFFF;
+    --loadmore-back-hover-color: #637FE6;
+    --movies-show-title-back-color: #1E2B4A;
+    --movies-show-title-text-color: #FFFFFF;
+    --movies-show-year-back-color: #637FE6;
+    --movies-show-year-text-color: #FFFFFF;
+    --movies-show-length-back-color: #D33F6B;
+    --movies-show-length-text-color: #FFFFFF;
+    --movies-show-description-back-color: #6240E6;
+    --movies-show-description-text-color: #FFFFFF;
+    --movies-show-country-back-color: #EC8656;
+    --movies-show-country-text-color: #FFFFFF;
+    --movies-show-category-back-color: #DDFA6E;
+    --movies-show-category-text-color: #121212;
+    --movie-back-color: #333545;
+    --movie-hover-back-shadow-color: 9px 10px 30px -19px rgba(0, 0, 0, 0.9);
+    --movies-title-back-color: #1E2B4A;
+    --movies-title-text-color: #FFFFFF;
+    --movies-category-back-color: #DDFA6E;
+    --movies-category-text-color: #121212;
+    --nav-border-color: 1px solid #637FE6;
+    --nav-link-text-color: #637FE6;
+    --search-back-color: #222530;
+    --search-btn-border-color: 1px solid #637FE6;
+    --search-btn-back-color: #17171A;
+    --search-btn-text-color: #637FE6;
+    --search-btn-shadow-back-color: 0px 0px 44px 5px rgba(20, 26, 61, 0.46);
+    --search-text-color: #A2A7B9;
+    --search-text-placeholder-color: #A2A7B9;
+}
+
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(1);
+}
+
+.switcher__radio:checked {
+    filter: invert(0);
+}
+
+.switcher__status {
+    filter: invert(1);
+}

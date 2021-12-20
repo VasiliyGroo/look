@@ -3,7 +3,7 @@
 /*-----------------*/
 .footer {
     padding: 20px;
-    background-color: #1E2B4A;
+    background-color: var(--footer-back-color);
     margin-top: auto;
 }
 
@@ -22,7 +22,7 @@
 .footer__nav-link {
     margin: 7px 40px;
     padding: auto;
-    color: #FFFFFF;
+    color: var(--footer-nav-link-color);
     text-decoration: none;
 }
 
@@ -43,6 +43,6 @@
 }
 
 .footer__copyright {
-    color: #FFFFFF;
+    color: var(--footer-copyright-color);
     font-size: 1em;
 }
