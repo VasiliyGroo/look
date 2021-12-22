@@ -104,21 +104,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0b182b;
-    color: #ffffff;
+    background-color: var(--movie-show-average-back-color);
+    font-weight: bold;
+    z-index: 2;
+    color: var(--movie-show-average-text-color);
     font-size: 13px;
   }
   
   .movie-show__average--green {
-    border: 2px solid green;
+    border: 4px solid green;
   }
   
   .movie-show__average--orange {
-    border: 2px solid orange;
+    border: 4px solid orange;
   }
   
   .movie-show__average--red {
-    border: 2px solid red;
+    border: 4px solid red;
   }
 
 @media (max-width:670px) {

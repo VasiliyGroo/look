@@ -33,6 +33,10 @@
     --movies-show-country-text-color: #FFFFFF;
     --movies-show-category-back-color: #DDFA6E;
     --movies-show-category-text-color: #121212;
+    --movie-average-back-color: #0b182b;
+    --movie-average-text-color: #FFFFFF;
+    --movie-show-average-back-color: #0b182b;
+    --movie-show-average-text-color: #FFFFFF;
     --movie-back-color: #333545;
     --movie-hover-back-shadow-color: 9px 10px 30px -19px rgba(0, 0, 0, 0.9);
     --movies-title-back-color: #1E2B4A;
