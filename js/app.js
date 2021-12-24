@@ -16,22 +16,8 @@ async function getMovies(url) {
   });
   respData = await resp.json();
   showMovies(respData);
-}
-getMovies(API_URL_POPULAR);
-
-// async function getDescMovies(id) {
-//   const params = {
-//     headers: {
-//       method: 'GET',
-//       'X-API-KEY': API_KEY, 
-//       'Content-Type': 'application/json', 
-//     }
-// };
-//   const resp = await fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`, params);
-//   result = await resp.json();
-//   console.log(result.description);
-// }; 
-// getDescMovies(3002);
+};
+  getMovies(API_URL_POPULAR);
 
 function getClassByRate(rating) {
   if (rating >= 7) {
@@ -55,10 +41,12 @@ function showMovies(data) {
     
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
+
+
   
     movieEl.innerHTML = `
        
-        <a href="${movie.posterUrlPreview}" data-hystmodal="#myModal-${movie.filmId}">
+        <a href="${movie.posterUrlPreview}" onclick="getIdFilm(${movie.filmId})" data-hystmodal="#myModal-${movie.filmId}">
           <div class="movie__cover-inner">
             <img
               src="${movie.posterUrlPreview}"
@@ -93,7 +81,7 @@ function showMovies(data) {
                         )}</div>
                           <div class="movie-show__year">Год выхода: ${movie.year}</div>
                           <div class="movie-show__length">Продолжительность: ${movie.filmLength}</div>
-                          <div class="movie-show__description">Описание: </div>
+                          <div class="movie-show__description" id="desc-${movie.filmId}"></div>
                           <div class="movie-show__average movie-show__average--${getClassByRate(movie.rating)}">${Math.abs(movie.rating)}
                        </div>
                        </div>
@@ -149,3 +137,24 @@ button.addEventListener('click', function(e) {
 $("#button").click(function() {
   $("html").animate({ scrollTop: 0 }, "slow");
   });
+
+
+// Полное описание фильма с вызовом 2 url API
+function getIdFilm(id) {
+ let url;
+ url = `https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`;
+ let desc;
+  async function getDescMovies() {
+    const resp = await fetch(url, {
+      headers: {
+        method: 'GET',
+        'X-API-KEY': API_KEY, 
+        'Content-Type': 'application/json', 
+      },
+    });
+    desc = await resp.json();
+    let descr = document.getElementById('desc-' + id);
+    descr.innerHTML = `Описание: ${desc.description}`;
+  }
+  getDescMovies();
+}
