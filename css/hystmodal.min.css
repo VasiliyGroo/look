@@ -108,11 +108,6 @@
     outline: none
 }
 
-.hystmodal__close:focus {
-    outline: 2px dotted #afb3b9;
-    outline-offset: 2px
-}
-
 @media (max-width:980px) {
     .hystmodal__close {
         position: absolute;
@@ -134,7 +129,7 @@
         margin: 0
     }
 }
-@media (max-width:670px) {
+@media (max-width:700px) {
     .hystmodal__window {
         height: 100%;
         max-height: min-content;

@@ -15,6 +15,15 @@ body {
     background-color: var(--body-back-color);
 }
 
+a { 
+    outline: none;
+}
+
+a:active {
+    border:0;
+    outline: none;
+}
+
 *,
 *:before,
 *:after {
