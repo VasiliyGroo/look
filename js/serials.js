@@ -130,8 +130,8 @@ let page = 1;
 button.addEventListener('click', function(e) {
   e.preventDefault();
   page = page + 1;
-  const apiPopMovies = `${API_URL_POPULAR}${page}`;
-  getMovies(apiPopMovies);
+  const apiSerials = `${API_URL_SERIAL}${page}`;
+  getMovies(apiSerials);
 }); 
 
 $("#button").click(function() {
