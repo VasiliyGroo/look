@@ -57,10 +57,11 @@
 .hystmodal__wrap {
     flex-shrink: 0;
     flex-grow: 0;
-    width: 100%;
-    max-width: 870px;
-    height: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    width: 1150px;
+    height: auto;
+    margin: auto;
+    padding: 60px 15px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -76,7 +77,8 @@
     align-items: center;
     justify-content: center;
     background: var(--hystmodal-window-back-color);
-    width: 870px;
+    width: 1150px;
+    max-height: auto;
     max-width: 100%;
     overflow: visible;
     transition: transform .2s ease 0s, opacity .2s ease 0s;
@@ -108,7 +110,7 @@
     outline: none
 }
 
-@media (max-width:980px) {
+@media (max-width:1220px) {
     .hystmodal__close {
         position: absolute;
         z-index: 10000;
@@ -129,7 +131,7 @@
         margin: 0
     }
 }
-@media (max-width:700px) {
+@media (max-width:670px) {
     .hystmodal__window {
         height: 100%;
         max-height: min-content;
@@ -138,8 +140,8 @@
         background-color: var(--hystmodal-window-phone-back-color);
     }
     .hystmodal__close {
-        top: 10px;
-        right: 10px;
+        top: -40px;
+        right: 20px;
         width: 35px;
         height: 35px;
         border-radius: 50%;

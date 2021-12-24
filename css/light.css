@@ -29,6 +29,10 @@
     --movies-show-length-text-color: #FFFFFF;
     --movies-show-description-back-color: #6240E6;
     --movies-show-description-text-color: #FFFFFF;
+    --movies-show-director-back-color: #50AFA2;
+    --movies-show-director-text-color: #FFFFFF;
+    --movies-show-actor-back-color: #EA5C3E;
+    --movies-show-actor-text-color: #FFFFFF;
     --movies-show-country-back-color: #EC8656;
     --movies-show-country-text-color: #FFFFFF;
     --movies-show-category-back-color: #DDFA6E;

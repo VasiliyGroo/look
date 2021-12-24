@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
+    max-width: 1160px;
     margin: 0 auto;
     background-color: var(--loadmore-back-color);
     height: 90px;

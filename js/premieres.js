@@ -46,7 +46,7 @@ function showMovies(data) {
   
     movieEl.innerHTML = `
        
-        <a href="${movie.posterUrlPreview}" onclick="getIdFilm(${movie.filmId})" data-hystmodal="#myModal-${movie.filmId}">
+        <a href="${movie.posterUrlPreview}" onclick="getIdFilm(${movie.filmId}); getIdFilm2(${movie.filmId});" data-hystmodal="#myModal-${movie.filmId}">
           <div class="movie__cover-inner">
             <img
               src="${movie.posterUrlPreview}"
@@ -59,7 +59,7 @@ function showMovies(data) {
             <div class="movie__title">${movie.nameRu || movie.nameEn}</div>
               <div class="movie__category">${movie.genres.map(
                 (genre) => ` ${genre.genre}`)}</div>
-              <div class="movie__average movie__average--${getClassByRate(movie.rating)}">${Math.abs(movie.rating)}</div>
+              <div class="movie__average movie__average--${getClassByRate(movie.rating)}">${Math.abs(movie.rating) || `0`}</div>
               </div>
               <!-- Блок модального окна -->
         <div class="hystmodal" id="myModal-${movie.filmId}" aria-hidden="true">
@@ -74,15 +74,17 @@ function showMovies(data) {
                       <div class="movie-show__info">
                           <div class="movie-show__title">${movie.nameRu || movie.nameEn}</div>
                               <div class="movie-show__category">${movie.genres.map(
-                              (genre) => ` ${genre.genre}`
+                              (genre) => ` ${genre.genre || `Неизвестно`}`
                           )}</div>
                           <div class="movie-show__country">Страна: ${movie.countries.map(
-                            (country) => ` ${country.country}`
+                            (country) => ` ${country.country || `Неизвестно`}`
                         )}</div>
-                          <div class="movie-show__year">Год выхода: ${movie.year}</div>
-                          <div class="movie-show__length">Продолжительность: ${movie.filmLength}</div>
+                          <div class="movie-show__year">Год выхода: ${movie.year || `Неизвестно`}</div>
+                          <div class="movie-show__director" id="director-${movie.filmId}"></div>
+                          <div class="movie-show__actor" id="actor-${movie.filmId}"></div>
+                          <div class="movie-show__length" id="length-${movie.filmId}"></div>
                           <div class="movie-show__description" id="desc-${movie.filmId}"></div>
-                          <div class="movie-show__average movie-show__average--${getClassByRate(movie.rating)}">${Math.abs(movie.rating)}
+                          <div class="movie-show__average movie-show__average--${getClassByRate(movie.rating)}">${Math.abs(movie.rating) || `0`}
                        </div>
                        </div>
                     </div>
@@ -141,20 +143,46 @@ $("#button").click(function() {
 
 // Полное описание фильма с вызовом 2 url API
 function getIdFilm(id) {
- let url;
- url = `https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`;
- let desc;
-  async function getDescMovies() {
-    const resp = await fetch(url, {
-      headers: {
-        method: 'GET',
-        'X-API-KEY': API_KEY, 
-        'Content-Type': 'application/json', 
-      },
-    });
-    desc = await resp.json();
-    let descr = document.getElementById('desc-' + id);
-    descr.innerHTML = `Описание: ${desc.description}`;
+  let url;
+  url = `https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`;
+  let desc;
+   async function getDescMovies() {
+     const resp = await fetch(url, {
+       headers: {
+         method: 'GET',
+         'X-API-KEY': API_KEY, 
+         'Content-Type': 'application/json', 
+       },
+     });
+     desc = await resp.json();
+     let descr = document.getElementById('desc-' + id);
+     descr.innerHTML = `Описание: ${desc.description || `Неизвестно`}`;
+     let length = document.getElementById('length-' + id);
+     length.innerHTML = `Продолжительность: ${desc.filmLength || `Неизвестно`} мин.`;
+   }
+   getDescMovies();
+ }
+ 
+ // Информация о том кто играл в фильме и кто срежиссировал
+ function getIdFilm2(id2) {
+   let url;
+   url = `https://kinopoiskapiunofficial.tech/api/v1/staff?filmId=${id2}`;
+   let pers;
+    async function getPersonaMovies() {
+      const resp = await fetch(url, {
+        headers: {
+          method: 'GET',
+          'X-API-KEY': API_KEY, 
+          'Content-Type': 'application/json', 
+        },
+      });
+      pers = await resp.json();
+      const actors = pers.map(nameRu => nameRu.nameRu);
+      const directors = pers.map(nameRu => nameRu.nameRu);
+      let director = document.getElementById('director-' + id2);
+      director.innerHTML = `Режиссер: ${directors[0] || `Неизвестно`}`;
+      let actor = document.getElementById('actor-' + id2);
+      actor.innerHTML = `В ролях: ${actors[1] || `Неизвестно`}, ${actors[2] || `Неизвестно`}, ${actors[3] || `Неизвестно`}, ${actors[4] || `Неизвестно`}, ${actors[5] || `Неизвестно`}, ${actors[6] || `Неизвестно`}...`;
+    }
+    getPersonaMovies();
   }
-  getDescMovies();
-}
