@@ -1,88 +1,91 @@
 /* Адаптивная верстка с медиазапросами */
 
 @media screen and (max-width: 1220px) {
-	.container {
+    .container {
         width: 100%;
         max-width: 1170px;
         margin: 0 auto;
-	}
+    }
 }
 
 @media screen and (max-width: 1199px) {
-	.container {
+    .container {
         width: 100%;
         max-width: 920px;
         margin: 0 auto;
-	}
+    }
 
-    .show-search:hover > .show-search__text {
+    .show-search:hover>.show-search__text {
         max-width: 390px;
     }
 }
 
 @media screen and (max-width: 1060px) {
-	.container {
+    .container {
         width: 100%;
         max-width: 680px;
         margin: 0 auto;
-	}
+    }
 
     .nav,
     .search {
-		display: none;
-	}
+        display: none;
+    }
 
-	.menu-open {
-	    display: block;
-	}
+    .menu-open {
+        display: block;
+    }
+
     .header.big {
         display: none;
     }
-    
+
     .header.big .nav__link {
         display: none;
     }
-    
-    .show-search:hover > .show-search__text {
+
+    .show-search:hover>.show-search__text {
         max-width: 340px;
     }
 }
 
 
 @media screen and (max-width: 991px) {
-	.container {
+    .container {
         width: 100%;
         max-width: 680px;
         margin: 0 auto;
-	}
+    }
 
     .nav,
     .search {
-		display: none;
-	}
+        display: none;
+    }
 
-	.menu-open {
-	    display: block;
-	}
+    .menu-open {
+        display: block;
+    }
+
     .header.big {
         display: none;
     }
-    
+
     .header.big .nav__link {
         display: none;
     }
-    
-    .show-search:hover > .show-search__text {
+
+    .show-search:hover>.show-search__text {
         max-width: 340px;
     }
 }
 
 @media screen and (max-width: 767px) {
-	.container {
+    .container {
         width: 100%;
         max-width: 540px;
         margin: 0 auto;
-	}
+    }
+
     .footer__inner {
         display: grid;
         grid-template-rows: auto auto;
@@ -95,31 +98,32 @@
 
     .nav,
     .search {
-		display: none;
-	}
+        display: none;
+    }
 
-	.menu-open {
-	    display: block;
-	}
+    .menu-open {
+        display: block;
+    }
+
     .header.big {
         display: none;
     }
-    
+
     .header.big .nav__link {
         display: none;
     }
-    
-    .show-search:hover > .show-search__text {
+
+    .show-search:hover>.show-search__text {
         max-width: 250px;
     }
 }
 
 @media screen and (max-width: 575px) {
-	.container {
-		width: 100%;
+    .container {
+        width: 100%;
         max-width: 300px;
         margin: 0 auto;
-	}
+    }
 
     .footer__inner {
         display: grid;
@@ -134,8 +138,8 @@
     .movie {
         width: 100%;
         max-width: 300px;
-      }
-      
+    }
+
     .movie__cover {
         display: block;
         width: auto;
@@ -146,32 +150,33 @@
 
     .nav,
     .search {
-		display: none;
-	}
+        display: none;
+    }
 
-	.menu-open {
-	    display: block;
-	}
+    .menu-open {
+        display: block;
+    }
+
     .header.big {
         display: none;
     }
-    
+
     .header.big.nav__link {
         display: none;
     }
-    
-    .show-search:hover > .show-search__text {
+
+    .show-search:hover>.show-search__text {
         max-width: 180px;
     }
 }
 
 
 @media screen and (max-width: 350px) {
-	.container {
-		width: 100%;
+    .container {
+        width: 100%;
         max-width: 280px;
         margin: 0 auto;
-	}
+    }
 
     .footer__inner {
         display: grid;
@@ -186,8 +191,8 @@
     .movie {
         width: 100%;
         max-width: 280px;
-      }
-      
+    }
+
     .movie__cover {
         display: block;
         width: auto;
@@ -198,21 +203,23 @@
 
     .nav,
     .search {
-		display: none;
-	}
+        display: none;
+    }
 
-	.menu-open {
-	    display: block;
-	}
+    .menu-open {
+        display: block;
+    }
+
     .header.big {
         display: none;
     }
-    
+
     .header.big.nav__link {
         display: none;
     }
-    
-    .show-search:hover > .show-search__text {
+
+    .show-search:hover>.show-search__text {
         max-width: 105px;
     }
+
 }

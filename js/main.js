@@ -34,6 +34,12 @@ $(function () {
 	})
 });
 
+$(function () {
+	$('.menu-open').click(function () {
+		$('.switcher').toggleClass('show-switcher')
+	})
+});
+
 function myFunction(x) {
-  x.classList.toggle("change");
+	x.classList.toggle("change");
 }

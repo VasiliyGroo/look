@@ -57,19 +57,31 @@
     transition: background-position 0.1s ease-in;
 }
 
-.switcher__radio:focus-visible ~ .switcher__status {
+.switcher__radio:focus-visible~.switcher__status {
     box-shadow: 0 0 0 1px #637FE6;
 }
 
-.switcher__radio--light:checked ~ .switcher__status {
+.switcher__radio--light:checked~.switcher__status {
     background-position: left 2px center;
 }
 
-.switcher__radio--auto:checked ~ .switcher__status {
+.switcher__radio--auto:checked~.switcher__status {
     background-position: center center;
 }
 
-.switcher__radio--dark:checked ~ .switcher__status {
+.switcher__radio--dark:checked~.switcher__status {
     background-position: right 2px center;
 }
 
+@media screen and (max-width: 1060px) {
+    .switcher {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .show-switcher {
+        display: flex;
+        z-index: 10000;
+    }
+}
